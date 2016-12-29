@@ -117,7 +117,6 @@ void setup()
    default: Serial.println("Unknown"); break;
  }
 
-
 //set pins for RFM95
  pinMode(RFM95_RST, OUTPUT);
  digitalWrite(RFM95_RST, HIGH);
@@ -158,7 +157,6 @@ void gotoSleep()
  Serial.println("Radio Sleep");
  rf95.sleep();
  delay (10);
-
 
  // To enter low power sleep mode call Watchdog.sleep() like below
  // and the watchdog will allow low power sleep for as long as possible.
